@@ -1,0 +1,74 @@
+/* pages/index/index3.wxss */
+page{
+  width:100vw;
+  height: 100wh;
+  
+}
+.main .van-tabs__line{
+  background-color: #FF8D1A
+}
+.allList{
+  box-sizing: border-box;
+  width: 98vw;
+  padding:30rpx; 
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 20rpx auto;
+}
+.top_name1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding-bottom:20rpx;
+  border-bottom: 1px solid #ddd;
+  margin-bottom:20rpx;
+}
+.top_name1 text:last-child{
+  color: #ddd;
+}
+.top_name1 text.name{
+  color:#000;
+}
+.center_content{
+  display: flex;
+  margin-bottom:25rpx;
+}
+.center_content view:first-child{
+  width: 20vw;
+  height: 20vw;
+  border-radius: 10rpx; 
+}
+.center_content view:first-child image{
+  width: 100%;
+  height: 100%;
+}
+.center_content view:last-child text{
+  display: block;
+  font-size:0.80rem;
+  color:#ddd;
+  margin: 10rpx 15rpx
+}
+.center_content view:last-child text.time{
+  color:#000
+}
+.center_content view:last-child text.code{
+  color:#FF8D1A;
+}
+.bottom{
+  width: 100%;
+  position: relative;
+  height: 70rpx; 
+}
+.bottom button{
+  position: absolute;
+  right: 1vw;
+  top:0;
+  font-size: 0.85rem;
+  background-color:#fff;
+  padding: 0 55rpx;
+  height: 65rpx;
+  line-height: 65rpx;
+  box-sizing: border-box;
+}
+

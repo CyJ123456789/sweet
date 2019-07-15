@@ -1,0 +1,80 @@
+<view class="index1">
+  <view class='top'>
+    <view class='parent'>
+      <select prop-array='{{selectArray}}'></select>
+      <navigator url='../search/index' hover-class="none"> 
+        <input class="" placeholder="巧克力慕斯" disabled/>
+    </navigator>
+    </view>
+  </view>
+  <scroll-view class="theme" scroll-y="true">
+    <!-- 轮播部分 -->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+      <block wx:for="{{imgUrls}}" wx:key="item">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 标题列表 -->
+    <view class='titleList'>
+      <text wx:for="{{title}}" wx:key="item" wx:for-index="index" data-index1="{{index}}" bindtap="choseTitle">{{item}}</text>
+    </view>
+    <!-- 店铺列表 -->
+    <view class='bread' bindtap='jumpBread'>
+      <view class='bread-image'>
+        <image src='/image/images/dessert.jpg'></image>
+      </view>
+      <view class='bread-right'>
+        <view class='bread-name'>冰淇淋蛋糕美食</view>
+        <view class='bread-details'>
+          <view class='bread-size'>
+            <view class='bread-type'>
+              <view class='bread-region'>虎丘区</view>
+              <view>甜点</view>
+            </view>
+            <view class='bread-distance'>
+              <view>3.9km</view>
+            </view>
+          </view>
+          <view class='bread-meal'>周末超值甜点，下午茶的必备，立享特色双人套餐…
+14元双份草莓奶油甜甜圈</view>
+        </view>
+      </view>  
+    </view>
+  </scroll-view>
+  <!-- 底层透明膜 -->
+  <view class='dialog1' catchtap="isshow2" wx:if="{{isshow}}">
+  </view>
+  <!-- 外层透明膜 -->
+  <view class="dialog2" wx:if="{{isshow}}">
+    <van-tabs active="{{index}}">
+        <van-tab title="面包甜点" class="content1">
+          <view class="item">
+            <text wx:for="{{choseList}}" wx:for-index="index" wx:key="item">{{item}}</text>
+          </view>
+        </van-tab>
+        <van-tab title="智能排序" class="content1">
+          <view class='item'>
+            <text wx:for="{{sort}}" wx:for-index="index" wx:key="item">{{item}}</text>
+          </view></van-tab>
+        <van-tab title="筛选" class="content1">
+          <view class='switch'>
+            <view>
+              <view class='choseItem' wx:for="{{switch1}}" wx:key="item" wx:for-index="index">
+                <text>{{item.text}}</text>
+                <van-switch active-color="#FF8D1A" size="25px" data-checked="{{index}}" checked="{{item.checked}}" bind:change="onChange1"/>
+              </view>
+            </view>
+            <view>
+              <text>用餐人数</text>
+              <view class='list'>
+                <text wx:for="{{number}}" wx:for-index="index" wx:key="item" data-index="{{index}}" class="{{item.ishow?'pitch':''}}" bindtap="choseList">{{item.name}}</text>
+              </view>
+            </view>
+          </view>
+        </van-tab>
+      </van-tabs>
+  </view>
+  <!-- 1233123 -->
+</view>

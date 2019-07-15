@@ -1,0 +1,17 @@
+<!--pages/evaluate/evaluate.wxml-->
+<view>
+  <view class='award'>
+    <text>奖</text>
+    <text>评价有机会得优惠券及最高100积分</text>
+  </view>
+  <view class='estimate'>
+    <view wx:for="{{estimateList}}" wx:key="{{index}}" wx:for-index="index" data-forch="{{index}}" bindtap="chose">
+      <text>{{item.text}}</text>
+      <image class='img1' src="{{item.isshow?item.select:item.no}}"></image>
+      <image class='img2' wx:if="{{item.isshow}}" src="{{item.xing}}"></image>
+    </view>
+  </view>
+  <textarea placeholder="输入评价" bindinput='changeConent'></textarea>
+  <button bindtap="issue">发布</button>
+  <van-toast id="van-toast" duration="1000"/>
+</view>

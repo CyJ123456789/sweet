@@ -1,0 +1,72 @@
+/* pages/personage/personage.wxss */
+
+.main {
+  background-image: url("http://www.chinapoesy.com/UploadFiles/Poesy/20141015_92b4978b-973a-472c-b4e8-33d89e01853f.jpg");
+  background-size: 100% auto;
+}
+
+.userinfo {
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #a1a3a6;
+}
+.set {
+  margin-top: 2vw;
+}
+.seting {
+  margin-left: 8vw;
+}
+
+.bell {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 8vw;
+  margin-top: 2vw;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  margin-top: 30rpx;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.main1 {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main1 navigator {
+  width: 33.3%;
+  height: 230rpx;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  padding-top: 50rpx;
+}
+
+.main1 navigator image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.main1 navigator text {
+  display: block;
+  font-size: 30rpx;
+}

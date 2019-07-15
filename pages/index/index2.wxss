@@ -1,0 +1,72 @@
+/* pages/nearby/nearby.wxss */
+page{
+  width: 100vw;
+  height: 100vh;
+}
+.nearby{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.nearby view.top{
+  width: 100%;
+  height: 8vh;
+  display: flex;
+}
+.nearby view.top view{
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+}
+.nearby view.top view text{
+  height: 8vh;
+  line-height: 8vh;
+}
+.nearby view.top view text.flod{
+  font-weight: bolder;
+}
+.nearby view.top input{
+  width: 76vw;
+  margin-top: .5vh;
+  height: 85%;
+  margin-left: 3vw;
+  border:1px solid #ddd;
+  border-radius: 10rpx;
+  font-size: 35rpx;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+}
+.area{
+  position: absolute;
+  left: 0;
+  top:7.5vh;
+  z-index: 2;
+  background-color: #fff;
+  width:40vw;
+  height: 35vh;
+  padding-left: 20rpx;
+  overflow: auto;
+}
+.area .area-list{
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding: 15rpx 0;
+}
+.area .area-list:last-child{
+  border:none;
+}
+.area .area-list image{
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  width: 60rpx;
+  height: 50rpx;
+}
+.nearby map{
+  width: 100vw;
+  height: 92vh;
+}
+.red{
+  color: #FF8D1A;
+}

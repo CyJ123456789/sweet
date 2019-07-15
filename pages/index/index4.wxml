@@ -1,0 +1,28 @@
+<!--pages/personage/personage.wxml-->
+<view>
+  <view class='main'>
+    <view class='header'>
+      <view class='set'>
+        <navigator url='../set/index'><van-icon name="setting" class='seting' size='1.4em'></van-icon></navigator>
+      </view>
+      <view class='bell'>
+        <navigator url='../service/index'><van-icon name="audio" class='seting' size='1.4em' ></van-icon></navigator>
+        <navigator url='../inform/index'><van-icon name="bell" class='seting' size='1.4em' ></van-icon></navigator>
+      </view>
+
+    </view>
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  </view>
+  <view class="main1">
+    <navigator wx:for="{{list}}" url='{{item.url}}' wx:key="item">
+      <image src='{{item.src}}'></image>
+      <text>{{item.text}}</text>
+    </navigator>
+  </view>
+</view>

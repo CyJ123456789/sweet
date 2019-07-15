@@ -1,0 +1,27 @@
+<!--pages/addresSearch/addresSearch.wxml-->
+<view>
+  <view class='search'>
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot bind:change="getsuggest" >
+      <view slot="action" bind:tap="getsuggest">搜索</view>
+    </van-search>
+  </view>
+  <view class="hot">
+    <view class='caption'>热门搜索</view>
+    <view>
+      <text>蛋糕</text>
+      <text>冰激淋</text>
+      <text>学糕</text> 
+    </view>
+  </view>
+  <view class='hot'>
+    <view class='caption'>历史记录</view>
+    <view>
+      <text>冰棍</text>
+      <text>新疆大盘鸡</text>
+      <text>牛蛙面</text> 
+    </view>
+  </view>
+  <view class='serachList' wx:if="{{isShowList}}">
+    <view class='requstList' wx:for="{{address}}" bindtap="chooseCenter" data-name="{{item}}">{{item.title}}</view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/collect/index.wxml-->
+<text>收藏</text>
+<view>
+  <view class='tab'>
+    <van-tabs swipeable>
+      <van-tab title="商家">11111</van-tab>
+      <van-tab title="店铺">2222</van-tab>
+      <van-tab title="内容">3333</van-tab>
+    </van-tabs>
+  </view>
+</view>

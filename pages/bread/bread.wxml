@@ -1,0 +1,88 @@
+<view class="bread">
+  <view class="top">
+    <view class='left'>
+      <image src='/image/images/dessert.jpg'></image>
+    </view>
+    <view class='right'>
+      <view class="first">
+        <view>
+          <text>品牌</text>
+          <text>小鲍糕点站</text>
+        </view>
+        <view>
+          <text>保</text>
+          <text>票</text>
+        </view>
+      </view>
+      <view class='second'>
+        <view class='rate1'>
+          <van-rate value="3.5" readonly size="13" color="#FF8D1A"/>
+          <text>3.5</text>
+          <text>月售1314单</text>          
+        </view>
+        <view class='rate2'>
+          <text>准时达</text>
+          <text>蜂鸟专送</text>
+        </view>
+      </view>
+      <view class='third'>
+        <view>
+          <text>￥10元起送</text>
+          <text>配送费￥5</text>
+          <text>￥40/人</text>
+        </view>
+        <view>
+          <text>233米</text>
+          <text>13分钟</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='activity'>
+    <view class='activity-item'>
+      <view>
+        <text>减</text> 
+        <text>满40减6（不与美食活动同享）</text>
+      </view>
+      <view>
+        <text>4个活动</text>
+        <image src='/image/icon/down.svg' class='down'></image>
+      </view>
+    </view>
+    <view class='discount'>
+      <text class='tubiao'>折</text>
+      <text>特惠5折抢</text>
+    </view>
+    <view class='site'>
+      <van-icon class='location' name="location" />
+      <view> 苏州市虎丘区太湖大道555555555号文体中心影视中心南业街 55555号 | 距您5555km</view>
+    </view>
+  </view>
+  <view class='tabs'>
+    <van-tabs swipeable>
+      <van-tab title="优惠信息">
+        <text class='name'>套餐专享</text>
+        <view wx:for="{{setMeal}}" wx:key="item" class='meal' bindtap="jumpCombo">
+          <view class='meal-ima'>
+            <image src='{{item.imageSrc}}' class='meal-image'></image>
+          </view>
+          <view class='meal-content'>
+            <view class='meal-buy'>
+              <text class='meal-name'>{{item.meal}}</text>
+              <view class='buy'>
+                <text>抢购</text>
+              </view>
+            </view>
+            <view class='meal-sales'>
+              <text>{{item.content}}</text>
+              <text>半年销量 {{item.sales}}</text>
+            </view>
+          </view>
+
+        </view>
+      </van-tab>
+      <van-tab title="用户评论">222</van-tab>
+      <van-tab title="商家信息">333</van-tab>
+    </van-tabs>
+  </view>
+</view>

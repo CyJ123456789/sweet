@@ -1,0 +1,87 @@
+/* pages/combo/combo.wxss */
+page{
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+.combo{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.combo .van-tabs__line{
+  background-color: #FF8D1A;
+}
+.theme{
+  height: 85vh;
+}
+.main{
+  box-sizing: border-box;
+  padding:0 1vw 2vw 1vw;
+}
+.main view{
+  font-size: .80rem;
+  margin:15rpx; 
+}
+.main view text{
+  margin: 10rpx;
+}
+.main view.instudetion{
+  display: flex;
+  justify-content: space-between;
+}
+.imageSliding{
+  width: 98vw;
+  display: flex;
+  flex-wrap:nowrap; 
+}
+.banner{
+  display: flex;
+  white-space: nowrap;
+}
+.banner image{
+  width: 31vw;
+  height: 31vw;
+  display: inline-block;
+  margin-right: 15rpx;
+}
+.banner image:last-child{
+  margin-right: 0
+}
+.main .item text{
+  display: block
+}
+.main .hint{
+  font-size: 1rem;
+  font-weight: bold
+}
+.main .item text:first-child{
+  font-weight: bold;
+  font-size: .95rem
+}
+.price{
+  width: 100%;
+  height: 12vw;
+  background-color:#ddd;
+  position: fixed;
+  bottom:0;
+  right: 0;
+  display: flex;
+  padding: 1vw;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.price button{
+  background-color: #FF8D1A;
+  border-radius: 15rpx;
+  height: 10vw;
+  line-height: 10vw;
+  margin-left: 45vw;
+}
+.price text{
+  display: block;
+  font-size: .80rem;
+}
+.price view{
+  margin-left: 2vw;
+}

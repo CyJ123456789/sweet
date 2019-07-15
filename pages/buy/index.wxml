@@ -1,0 +1,103 @@
+<view>
+  <view class='buy-shop'>
+    <view class='shop'>
+      <view class='shop-image'>
+        <image class='shopImage' src='/image/images/dessert.jpg'></image>
+      </view>
+      <view class='shop-right'>
+        <view class='shop-top'>
+          <view class='shop-combo'>
+            <text class='shop-combo-name'>2人招牌套餐</text>
+          </view>
+          <view class='shop-combo-price'>
+            <text>￥49</text>
+          </view>
+        </view>
+        <view class='shop-bottom'>
+          <text>周一至周日
+      免预约  |  随时退  |  过期自动退</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='count'>
+    <view class='count-text'>
+      <text>数量</text>
+    </view>
+    <view class='count-stepper'>
+      <van-stepper value="{{ value }}" bind:change="onChange" />
+    </view>
+  </view>
+  <view class='subtotal'>
+    <view class='subtotal-text'>
+      <text>小计</text>
+    </view>
+    <view class='subtotal-price'>
+      <text>￥***</text>
+    </view>
+  </view>
+  <view class='voucher'>
+    <view class='voucher-text'>
+      <text>抵用券</text>
+    </view>
+    <view class='voucher-next'>
+      <van-icon name="arrow"></van-icon>
+    </view>
+  </view>
+  <view class='money'>
+    <view class='money-name'>
+      <text>实付金额</text>
+    </view>
+    <view class='subtotal-price'>
+      <text>￥***</text>
+    </view>
+  </view>
+  <view class='cellPhone'>
+    <view class='cellPhone-text'>
+      <text>手机号</text>
+    </view>
+    <view class='cellPhone-text'>
+      <text>12345678910</text>
+    </view>
+  </view>
+
+  <view class='submit'>
+    <button bindtap='sub'>￥*** 提交订单</button>
+    <!-- <van-popup show="{{show}}" bind:close="onClose" position="bottom" close-on-click-overlay="true">
+    </van-popup> -->
+    <van-action-sheet show="{{ show }}" title="确认付款" bind:close="onClose" close-on-click-overlay="true">
+      <view class='price'>
+        <text>￥45.00</text>
+      </view>
+      <view class='orderinfo'>
+        <view class='orderinfo-text'>
+          <text>订单详情</text>
+        </view>
+        <view class='orderinfo-text'>
+          <text>小鲍糕点站2人招牌套餐</text>
+        </view>
+      </view>
+      <view class='payment'>
+        <view class='payment-text'>
+          <text>付款方式</text>
+        </view>
+        <view class='payment-method'>
+          <text>余额宝</text>
+          <van-icon name="arrow"/>
+        </view>
+
+      </view>
+      <view class='tokio'>
+        <view class='tokio-name'>
+          <text>花呗最高立减10元</text>
+        </view>
+        <view class='tokio-text'>
+          <text>立即使用</text>
+        </view>
+      </view>
+      <view class='pay-money'><button class='pay'>立即付款</button></view>
+    </van-action-sheet>
+
+    </view>
+
+  </view>

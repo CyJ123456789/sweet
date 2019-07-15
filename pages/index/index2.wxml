@@ -1,0 +1,22 @@
+<!--pages/nearby/nearby.wxml-->
+<view class='nearby' catchtap="hideAddressList">
+  <!-- 顶部搜索+控制区域显示按钮 -->
+  <view class="top">
+    <view catchtap="Hide">
+      <text class='flod'>三</text>
+      <text>{{address1?address1:"定位"}}</text>
+    </view>
+    <navigator hover-class="none" url='/pages/addresSearch/addresSearch'>
+      <input placeholder='附近搜索' disabled></input>
+    </navigator>
+  </view>
+  <!-- 区域选项 -->
+  <scroll-view class='area' wx:if="{{isShow}}" scroll-y="true">
+    <view class='area-list' wx:for="{{areaList}}" wx:for-index="idx" wx:for-item="list" data-index="{{idx}}" catchtap='change'>
+      <text class="{{list.imgIsShow?'red':''}}">{{list.address}}</text>
+      <image src='../../image/icon/selected.png' wx:if="{{list.imgIsShow}}"></image>
+    </view>
+  </scroll-view>
+  <!-- 地图显示 -->
+  <map class='map' longitude="{{longitude}}" latitude="{{latitude}}" scale="14" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
+</view>

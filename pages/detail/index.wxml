@@ -1,0 +1,2 @@
+<!--pages/detail/index.wxml-->
+<text>详情{{id}}</text>

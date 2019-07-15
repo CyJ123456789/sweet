@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-rate": "/miniprogram_npm/vant-weapp/rate/index",
+    "van-icon": "/miniprogram_npm/vant-weapp/icon/index",
+    "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index"
+  },
+  "backgroundColor": "#ffffff"
+}

@@ -1,0 +1,196 @@
+.buy-shop {
+  /* border: 1px solid red; */
+  padding: 0.63rem 1rem;
+  background-color: white;
+  border-top: rgba(243, 243, 243, 1) solid 0.07rem;
+}
+.shop {
+  /* height: 5rem; */
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.shop-image {
+  margin-right: 0.94rem;
+  /* border: 1px solid saddlebrown; */
+  width: 15%;
+  /* line-height: 5rem; */
+}
+
+.shopImage {
+  width: 3.12rem;
+	height: 3.12rem;
+}
+
+.shop-right {
+  /* border: 1px solid blue; */
+  width: 85%;
+}
+.shop-top {
+  display: flex;
+  justify-content: space-between;
+}
+.shop-combo-name {
+  color: rgba(56, 56, 56, 1);
+	font-size: 0.87rem;
+}
+.shop-combo-price text {
+  color: rgba(166, 166, 166, 1);
+	font-size: 0.69rem;
+}
+.shop-bottom {
+  color: rgba(166, 166, 166, 1);
+	font-size: 0.69rem;
+  margin-top: 0.31rem;
+}
+/* 数量 */
+.count {
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: white;
+  border-top: rgba(243, 243, 243, 1) solid 0.07rem;
+  font-size: 0.87rem;
+  display: flex;
+  justify-content: space-between;
+}
+.count-text {
+  color: rgba(56, 56, 56, 1);
+}
+.van-stepper__minus {
+  border-radius: 50%;
+}
+.van-stepper__plus {
+  border-radius: 50%;
+}
+.subtotal {
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: white;
+  border-top: rgba(243, 243, 243, 1) solid 0.07rem;
+  font-size: 0.87rem;
+  display: flex;
+  justify-content: space-between;
+}
+.subtotal-price {
+  color: rgba(255, 141, 26, 1)
+}
+.voucher {
+  height: 3rem;
+  padding: 0 1rem;
+  background-color: white;
+  border-top: rgba(243, 243, 243, 1) solid 0.07rem;
+  font-size: 0.87rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 3rem;
+	color: rgba(80, 80, 80, 1);
+	text-align: center;
+}
+.voucher-next {
+  width: 1.5rem;
+	height: 1.5rem;
+	font-size: 1.5rem;
+	color: rgba(166, 166, 166, 1);
+}
+.money {
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: white;
+  border-top: rgba(243, 243, 243, 1) solid 0.07rem;
+  font-size: 0.87rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cellPhone {
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: white;
+  border-top: rgba(243, 243, 243, 1) solid 0.07rem;
+  font-size: 0.87rem;
+  display: flex;
+  justify-content: space-between;
+}
+.submit button{
+  width: 100vw;
+	height: 3rem;
+  line-height: 3rem;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(255, 141, 26, 1);
+	font-size: 0.87rem;
+	text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.price {
+	height: 4.29rem;
+	color: rgba(0, 0, 0, 0.7735849056603773);
+	font-size: 2.11rem;
+	line-height: 4.29rem;
+	text-align: center;
+}
+.orderinfo {
+   height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: white;
+  border-top: rgba(243, 243, 243, 1) solid 0.07rem;
+  font-size: 0.87rem;
+  display: flex;
+  justify-content: space-between;
+}
+.payment {
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: white;
+  border-top: rgba(243, 243, 243, 1) solid 0.07rem;
+  font-size: 0.87rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+
+}
+.payment-method text {
+  text-align: right;
+}
+.tokio {
+   height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: white;
+  border-top: rgba(243, 243, 243, 1) solid 0.07rem;
+  font-size: 0.87rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: rgba(243, 243, 243, 1) solid 0.07rem;  
+}
+.tokio-text text{
+  padding: 0.3rem;
+  height: 1.41rem;
+	color: rgba(166, 166, 166, 1);
+  border: rgba(204, 204, 204, 1) solid 0.07rem;
+	box-shadow: rgba(204, 204, 204, 1) solid 0.07rem;
+	border-radius: 0.28rem;
+	font-size: 0.7rem;
+	line-height: 1.41rem;
+	text-align: center;
+}
+.pay-money {
+  margin-top: 7.7rem;
+
+}
+.pay {
+  width: 20.6rem;
+	height: 2.81rem;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(255, 141, 26, 1);
+	font-size: 0.87rem;
+	line-height: 2.81rem;
+	text-align: center;
+}

@@ -1,0 +1,163 @@
+page{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ddd;
+}
+.top{
+  width: 100%;
+  height:8vh;
+  padding: 1vh 0;
+  background-color:#fff; 
+}
+.parent{
+  display: flex;
+  height: 6vh;
+  box-sizing: border-box;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 30rpx;
+  border:1px solid #ddd;
+  padding: 1vh;
+}
+.parent input{
+  height: 4vh;
+  line-height: 4vh;
+  font-size: 25rpx;
+  padding: 0;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  margin-top: -3rpx;
+}
+.parent select{
+  font-size: 20rpx;
+  box-sizing: border-box;
+  height: 4vh;
+  border-right: 1px solid #ddd;
+}
+.theme{
+  height: 92vh;
+}
+.titleList{
+  height: 8vh;
+  line-height: 8vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+}
+.titleList text{
+  font-size: 30rpx;
+}
+.bread {
+  /* width: 100vw; */
+  padding: 8px 16px 12px;
+  /* border: 1px solid red; */
+  display: flex;
+  color: rgba(166, 166, 166, 1);
+  background-color: #ffffff;
+}
+.bread-image {
+  width: 15vh;
+  margin-right: 11px;
+  /* border: 1px solid blue; */
+}
+.bread-image image {
+  /* width: 15vh;
+  height: 15vh; */
+  width: 50px;
+  height: 50px;
+}
+.bread-right {
+  width: 85vh;
+  /* padding: 1vh; */
+  /* border: 1px solid gray; */
+}
+.bread-name {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+}
+
+.bread-details {
+  font-size: 11px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.bread-size {
+  display: flex;
+  justify-content: space-between;
+}
+.bread-type {
+  display: flex;
+  justify-content: space-between;
+}
+.bread-region {
+  border-right: 1rpx solid #999;
+}
+.bread-meal {
+  margin-top: 15px;
+}
+.slide-image{
+  width: 100vw;
+}
+.dialog1{
+  position: fixed;
+  z-index: 10;
+  top:0;
+  left: 0;
+  bottom:0;
+  right:0;
+  background-color: #000;
+  opacity: .5;
+}
+.dialog2{
+  position: fixed;
+  z-index: 20;
+  top:0;
+  left: 0;
+  right: 0;
+}
+.dialog2 .item{
+  background-color: #fff;
+}
+.dialog2 .item text{
+  display: block;
+  font-size: 0.87rem;
+  padding:20rpx 70rpx; 
+}
+.switch{
+  background-color: #fff;
+  padding:25rpx 70rpx;
+}
+.switch text{
+  font-size: 0.87rem;
+}
+.van-switch {
+  width: 1.75rem;
+	height: 0.87rem;
+}
+.list{
+  margin-left: -70rpx;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:start;
+}
+.list text{
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+  border:1px solid #ddd;
+  margin: 20rpx 0;
+  margin-left:70rpx; 
+}
+.choseItem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.pitch{
+  background-color:#FF8D1A
+}
+

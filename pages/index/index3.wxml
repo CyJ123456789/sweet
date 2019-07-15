@@ -1,0 +1,105 @@
+<!--pages/index/index3.wxml-->
+<!-- <text>第三页</text> -->
+<view class='main'>
+  <van-tabs swipeable>
+    <van-tab title="全部">
+      <view class='allList'>
+        <view class='top_name1'>
+          <text>胖老汉清真餐饮--牛蛙面</text>
+          <text>待评价</text>
+        </view>
+        <view class='center_content'>
+          <view>
+            <image src='http://img1.imgtn.bdimg.com/it/u=260410693,3961092282&fm=26&gp=0.jpg'></image>
+            </view>
+          <view>
+            <text>数量：1</text>
+            <text>总价：￥99.9</text>
+          </view>
+        </view>
+        <view class='bottom'>
+          <button bindtap="toEvaluate" data-title="麻辣火锅">评价</button>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="待付款">
+      <view class='allList'>
+        <view class='top_name1'>
+          <text>胖老汉清真餐饮--牛蛙面</text>
+          <text>待评价</text>
+        </view>
+        <view class='center_content'>
+          <view>
+            <image src='http://img1.imgtn.bdimg.com/it/u=260410693,3961092282&fm=26&gp=0.jpg'></image>
+            </view>
+          <view>
+            <text>数量：1</text>
+            <text>总价：￥99.9</text>
+          </view>
+        </view>
+        <view class='bottom'>
+          <button bindtap="toEvaluate" data-title="牛肉面">评价</button>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="待使用">
+      <view class='allList'>
+        <view class='top_name1'>
+          <text>胖老汉清真餐饮--牛蛙面</text>
+          <text>待评价</text>
+        </view>
+        <view class='center_content'>
+          <view>
+            <image src='http://img1.imgtn.bdimg.com/it/u=260410693,3961092282&fm=26&gp=0.jpg'></image>
+            </view>
+          <view>
+            <text>数量：1</text>
+            <text>总价：￥99.9</text>
+          </view>
+        </view>
+        <view class='bottom'>
+          <button bindtap="toEvaluate" data-title="小龙虾">评价</button>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="待评价">
+      <view class='allList'>
+        <view class='top_name1'>
+          <text class="name">胖老汉清真餐饮--牛蛙面</text>
+        </view>
+        <view class='center_content'>
+          <view>
+            <image src='http://img1.imgtn.bdimg.com/it/u=260410693,3961092282&fm=26&gp=0.jpg'></image>
+            </view>
+          <view>
+            <text class="time">2019-06-17 12:30 下单</text>
+            <text class="code">评价得优惠券及最高100积分</text>
+          </view>
+        </view>
+        <view class='bottom'>
+          <button bindtap="toEvaluate" data-title="牛蛙面">评价</button>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="退款/售后">
+      <view class='allList'>
+        <view class='top_name1'>
+          <text>胖老汉清真餐饮--牛蛙面</text>
+          <text>待评价</text>
+        </view>
+        <view class='center_content'>
+          <view>
+            <image src='http://img1.imgtn.bdimg.com/it/u=260410693,3961092282&fm=26&gp=0.jpg'></image>
+            </view>
+          <view>
+            <text>数量：1</text>
+            <text>总价：￥99.9</text>
+          </view>
+        </view>
+        <view class='bottom'>
+          <button bindtap="toEvaluate" data-title="汉堡">评价</button>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

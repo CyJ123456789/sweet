@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index",
+    "van-icon": "/miniprogram_npm/vant-weapp/icon/index",
+    "select": "/componet/select/select",
+    "van-switch":"/miniprogram_npm/vant-weapp/switch/index"
+  }
+}
